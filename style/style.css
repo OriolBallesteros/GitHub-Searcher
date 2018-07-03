@@ -1,0 +1,92 @@
+#search{
+    display: flex;
+    justify-content: center;
+}
+
+#search button{
+    margin-left: 10px; 
+}
+
+#user{
+    display: none; 
+}
+
+#userBio{
+    margin-top: 20px; 
+}
+
+#avatar{
+    width: 150px;
+    margin-right: 20px; 
+    float: left; 
+}
+
+#mainBio{
+    padding-top: 10px; 
+}
+
+#userRepos p{
+    margin-top: 40px; 
+    margin-bottom: 0px; 
+    
+}
+
+#nickName{
+    font-style: italic; 
+}
+
+#fullName{
+    font-size: 20px;
+    font-weight: bold; 
+}
+
+
+#listRepos{
+    list-style-type: none; 
+    
+}
+
+.list{
+    display: flex; 
+    position: relative; 
+    margin-top: 20px; 
+}
+
+.divStarFork{
+    position: absolute;
+    right: 100px; 
+}
+
+.fork{
+    width: 20px; 
+    margin-left: 20px;
+}
+
+.star{
+    width: 18px; 
+}
+
+#alertContainer{
+    display: none;
+    justify-content: center;
+}
+
+#alert{
+    width: fit-content; 
+    margin-top: 20px; 
+    padding: 5px; 
+    border: 1px solid red; 
+    background-color: pink;
+    color: red; 
+    border-radius: 5px; 
+     
+}
+
+/*
+.hide{
+    display: none; 
+}
+
+.show{
+    display: block;
+}*/
