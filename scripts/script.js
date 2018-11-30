@@ -93,33 +93,26 @@ function userRepos(data) {
 
 
         li.textContent = repoName;
-        repoStars(repo, div);
-        repoForks(repo, div);
-
+        printforksAndStars(repo, div);
+        
         li.appendChild(div);
         listRepos.appendChild(li);
 
     }
 }
 
-function repoStars(repo, div) {
+function printforksAndStars (repo, div){
     var numberStars = repo.stargazers_count;
-
-    var img = createImg("style/images/stars.png", "star");
-
-    div.appendChild(img);
-    div.appendChild(document.createTextNode(numberStars));
-
-}
-
-function repoForks(repo, div) {
     var numberForks = repo.forks;
-
-    var img = createImg("style/images/forks.png", "fork");
-
-    div.append(img);
+  
+    var imgStars = createImg("style/images/stars.png", "star");
+    var imgForks = createImg("style/images/forks.png", "fork");
+  
+    div.append(imgStars);
+    div.appendChild(document.createTextNode(numberStars));
+  
+    div.append(imgForks);    
     div.appendChild(document.createTextNode(numberForks));
-
 }
 
 function errorUser() {
